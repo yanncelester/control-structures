@@ -17,21 +17,12 @@ public class Main {
 
         if (stay <= 2) {
             stayCost = stay * 5;
+        } else if (stay <= 5) {
+            stayCost = (stay - 2) * 4 + 10;
+        } else if (stay <= 10) {
+            stayCost = (stay - 5) * 3 + 22;
         } else {
-            //Caso falso
-            if (stay <= 5) {
-                //Caso verdadero
-                stayCost = (stay - 2) * 4 + 10;
-            } else {
-                // Caso Falso
-                if (stay <= 10) {
-                    //Caso verdadero
-                    stayCost = (stay - 5 * 3 + 22);
-                } else {
-                    //Caso Falso
-                    stayCost = (stay - 10) * 2 + 37;
-                }
-            }
+            stayCost = (stay - 10) * 2 + 37;
         }
         System.out.println("El costo de la estadía es: " + stayCost);
     }
