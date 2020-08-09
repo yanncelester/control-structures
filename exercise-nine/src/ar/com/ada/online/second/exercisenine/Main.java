@@ -73,6 +73,7 @@ póliza.*/
             additionalNone = finalPolicy * 0.1;
             wage = additionalNone + finalPolicy;
             System.out.println("El costo final de su póliza es de: $" + wage);
+            System.exit(0);
         }
         wage = finalPolicy + additionalDrink + additionalGlasses + additionalDisease + additionalAge;
         System.out.println("El costo final de su póliza es de $" + wage);
